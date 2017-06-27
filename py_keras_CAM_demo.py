@@ -13,13 +13,16 @@ import os
 # import numpy as np
 # os.environ["THEANO_FLAGS"] = "mode=FAST_RUN,device=gpu2,floatX=float32,lib.cnmem=0.8,exception_verbosity=high"
 
+#--Replace the path for keras with local path--------
 #--- Local path ---
-sys.path.insert(0, "/media/manish/Data/keras/keras")
-sys.path.insert(0, "/media/manish/Data/keras/keras/keras")
+sys.path.insert(0,"/media/manish/Data/keras/keras")
+sys.path.insert(0,"/media/manish/Data/keras/keras/keras")
 
 #--- Server path ---
-# sys.path.insert(0,"/data/Manish/MedDCH/keras")
-# sys.path.insert(0,"/dedia/Manish/MedDCH/keras/keras")
+#sys.path.insert(0,"/data/Manish/MedDCH/keras")
+#sys.path.insert(0,"/dedia/Manish/MedDCH/keras/keras")
+#-----------------------------------------------------
+
 from keras import backend as K
 from keras.datasets import cifar10
 from keras.preprocessing.image import ImageDataGenerator
